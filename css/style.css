@@ -1,0 +1,48 @@
+button {
+  background-color: #2ac56c;
+  color: white;
+  border: 3px solid #17aa56;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px 25px;
+  transition: 2s;
+  /* transition-delay: 0.5s;
+  transition-property: padding, font-size; */
+  transition-timing-function: cubic-bezier(0,1.93,1,.15);
+  /* linear, ease, ease-in, ease-out, ease-in-out */
+}
+
+button:hover {
+  border-radius: 7px;
+  border-width: 7px;
+  font-size: 40px;
+  padding: 20px 50px;
+  background-color: deeppink;
+}
+
+img {
+  position: absolute;
+  width: 40%;
+  animation: 4s crazyflip;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes crazyflip {
+  0% {
+    right: -40%;
+  }
+
+  50% {
+    right: 40%;
+    transform: rotateX(0);
+  }
+
+  100% {
+    right: 40%;
+    transform: rotateX(360deg);
+  }
+}
+
+
+
